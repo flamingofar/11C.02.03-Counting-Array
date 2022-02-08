@@ -7,7 +7,9 @@ let count = 0;
 let arr = [];
 
 function initFunc() {
-	setTimeout(loopFunc, 1000);
+	if (count < 50) {
+		setTimeout(loopFunc, 1000);
+	}
 }
 
 function loopFunc() {
